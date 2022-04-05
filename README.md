@@ -2,4 +2,4 @@
 
 All my FCC projects so far submitted.
 
-- Tributal Page: HTML + CSS
+- Tribute Page: HTML + CSS
