@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="content">
+        <div id="header">
+            <h1 id="title">Anime Survey</h1>
+            <p id="description">Thank you for taking the time to complete this survey form</p>
+        </div>
+
+        <form id="survey-form">
+            <label for="name" id="name-label"><h3>What is your name?*</h3></label>
+            <input id="name" type="text" name="name" placeholder="Enter your name" required><br>
+
+            <label for="email" id="email-label"><h3>What is your email address?*</h3></label>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required><br>
+
+            <label for="age" id="number-label"><h3>What is your age?*</h3></label>
+            <input id="number" type="number" name="age" min="3" max="100" placeholder="Age" required><br>
+
+            <label for="gender" id="dropdown"><h3>What is your gender?</h3></label>
+                <select id="dropdown">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <br><br>
+
+            <label for="1st-introduced" id="1st-introduced"><h3>How were you first introduced to anime?</h3></label>
+                <input id="radio" type="radio" name="1st-introduced" value="By a friend" checked>
+                <label for="1st-introduced">By a friend</label><br>
+                <input id="radio" type="radio" name="1st-introduced" value="By a family member">
+                <label for="1st-introduced">By a family member</label><br>
+                <input id="radio" type="radio" name="1st-introduced" value="The Internet">
+                <label for="1st-introduced">The Internet</label><br>
+                <input id="radio" type="radio" name="1st-introduced" value="Television">
+                <label for="1st-introduced">Television</label><br>
+                <input id="radio" type="radio" name="1st-introduced" value="Video Game">
+                <label for="1st-introduced">Video Game</label>
+
+                <br><br>
+
+            <label for="watch-read" id="watch-read"><h3>How often do you watch anime and/or read manga?</h3></label>
+                <input id="radio" type="radio" name="watch-read" value="Every day" checked>
+                <label for="watch-read">Every day</label><br>
+                <input id="radio" type="radio" name="watch-read" value="A couple times a week">
+                <label for="watch-read">A couple times a week</label><br>
+                <input id="radio" type="radio" name="watch-read" value="A few times a month">
+                <label for="watch-read">A few times a month</label><br>
+                <input id="radio" type="radio" name="watch-read" value="Almost never">
+                <label for="watch-read">Almost never</label>
+
+                <br><br>
+
+
+            <label for="online-community" id="online-community"><h3>Are you a member of an online community for anime?</h3></label>
+                <input id="radio" type="radio" name="online-community" value="yes" checked>
+                <label for="online-community">Yes</label><br>
+                <input id="radio" type="radio" name="online-community" value="no">
+                <label for="online-community">No</label>
+
+                <br><br>
+
+            <label for="important-aspect"><h3>What is the most important aspect in anime/manga?</h3></label>
+                <input id="checkbox" type="checkbox" name="important-aspect" value="The story-line">
+                <label for="checkbox">The story-line</label><br>
+                <input id="checkbox" type="checkbox" name="important-aspect" value="The technique of the drawings">
+                <label for="checkbox">The technique of the drawings</label><br>
+                <input id="checkbox" type="checkbox" name="important-aspect" value="Character development">
+                <label for="checkbox">Character development</label><br>
+                <input id="checkbox" type="checkbox" name="important-aspect" value="The style">
+                <label for="checkbox">The style</label>
+
+                <br><br>
+
+            <label for="favorite-genre"><h3>What is your favorite anime genre?</h3></label>
+                <input id="checkbox" type="checkbox" name="favorite-genre" value="Action">
+                <label for="favorite-genre">Action</label><br>
+                <input id="checkbox" type="checkbox" name="favorite-genre" value="Drama">
+                <label for="favorite-genre">Drama</label><br>
+                <input id="checkbox" type="checkbox" name="favorite-genre" value="Fantasy">
+                <label for="favorite-genre">Fantasy</label><br>
+                <input id="checkbox" type="checkbox" name="favorite-genre" value="Horror">
+                <label for="favorite-genre">Horror</label><br>
+                <input id="checkbox" type="checkbox" name="favorite-genre" value="Romance">
+                <label for="favorite-genre">Romance</label><br>
+                <input id="checkbox" type="checkbox" name="favorite-genre" value="Science fiction">
+                <label for="favorite-genre">Science fiction</label><br>
+                <input id="checkbox" type="checkbox" name="favorite-genre" value="Slice of life">
+                <label for="favorite-genre">Slice of life</label><br>
+                <input id="checkbox" type="checkbox" name="favorite-genre" value="Supernatural">
+                <label for="favorite-genre">Supernatural</label>
+
+                <br><br>
+
+            <label for="textarea"><h3>What is your definition of anime?</h3></label>
+                <textarea name="comments" id="textarea" cols="50" rows="5" placeholder="Enter your option here."></textarea>
+
+            <br><br>
+
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>

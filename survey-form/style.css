@@ -1,0 +1,49 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: url('https://www.wallpapermaiden.com/image/2021/05/11/anime-magical-world-polychromatic-anime-girl-anime-landscape-anime-44474.jpeg') fixed no-repeat #2757ae;
+    color: #3c316e;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #e5f9f9;
+    text-shadow: 5px 5px 10px #2f619e;
+}
+
+p#description {
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+h3 {
+    color: #c2e4ee;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+div#content {
+    margin: 0 auto;
+    width: 600px;
+    background: rgba(107, 115, 194, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #2f619e;
+}
+
+div#header {
+    text-align: center;
+}
+
+form#survey-form {
+    margin: auto;
+    width: 85%;
+}
+
+input, textarea {
+    box-shadow: 5px 5px 10px #2f619e;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
