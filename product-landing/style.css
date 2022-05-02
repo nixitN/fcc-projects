@@ -1,0 +1,21 @@
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 30px;
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9cc1ee;
+    opacity: 0.7;
+}
+
+body {
+    padding-top: 80px;
+    width: 80%;
+}
+
+@media (max-width: 500px) {
+    body { flex-wrap: wrap; }
+}
