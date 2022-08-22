@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Python Documentation Page</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>PY Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+            <li><a class="nav-link" href="#Comments">Comments</a></li>
+            <li><a class="nav-link" href="#Variables">Variables</a></li>
+            <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+            <li><a class="nav-link" href="#If_Else">If Else</a></li>
+            <li><a class="nav-link" href="#While_Loops">While Loops</a></li>
+            <li><a class="nav-link" href="#For_Loops">For Loops</a></li>
+            <li><a class="nav-link" href="#Functions">Functions</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <h2>What is Python?</h2>
+                <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+                <p>It is used for:</p>
+                <ul>
+                    <li>web development (server-side),</li>
+                    <li>software development,</li>
+                    <li>mathematics,</li>
+                    <li>system scripting.</li>
+                </ul>
+            </article>
+            <article>
+                <h2>What can Python do?</h2>
+                <ul>
+                    <li>Python can be used on a server to create web applications.</li>
+                    <li>Python can be used alongside software to create workflows.</li>
+                    <li>Python can connect to database systems. It can also read and modify files.</li>
+                    <li>Python can be used to handle big data and perform complex mathematics.</li>
+                    <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Why Python?</h2>
+                <ul>
+                    <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+                    <li>Python has a simple syntax similar to the English language.</li>
+                    <li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+                    <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+                    <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Good to know</h2>
+                <ul>
+                    <li>The most recent major version of Python is Python 3, which we shall be using in this tutorial. However, Python 2, although not being updated with anything other than security updates, is still quite popular.</li>
+                    <li>In this tutorial Python will be written in a text editor. It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python files.</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Python Syntax compared to other programming languages</h2>
+                <ul>
+                    <li>Python was designed for readability, and has some similarities to the English language with influence from mathematics.</li>
+                    <li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</li>
+                    <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Syntax">
+            <header>Syntax</header>
+            <article>
+                <h2>Execute Python Syntax</h2>
+                <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:</p>
+                <code>>>> print("Hello, World!")
+                    Hello, World!</code>
+                <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</p>
+                <code>C:\Users\Your Name>python myfile.py</code>
+            </article>
+            <article>
+                <h2>Python Indentation</h2>
+                <p>Indentation refers to the spaces at the beginning of a code line.</p>
+                <p>Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.</p>
+                <p>Python uses indentation to indicate a block of code.</p>
+                <code>if 5 > 2:
+                    &ensp; print("Five is greater than two!")</code>
+                <p>The number of spaces is up to you as a programmer, the most common use is four, but it has to be at least one.</p>
+                <code>if 5 > 2:
+                    &nbsp; print("Five is greater than two!") 
+                    if 5 > 2:
+                    &emsp; &emsp; &emsp; &emsp; print("Five is greater than two!")</code>
+            </article>
+        </section>
+        <section class="main-section" id="Comments">
+            <header>Comments</header>
+            <article>
+                <p>Comments can be used to explain Python code.</p>
+                <p>Comments can be used to make the code more readable.</p>
+                <p>Comments can be used to prevent execution when testing code.</p>
+            </article>
+            <article>
+                <h2>Creating a Comment</h2>
+                <p>Comments starts with a <code class="inlinecode">#</code>, and Python will ignore them:</p>
+                <code>#This is a comment
+                    print("Hello, World!")</code>
+                <p>Comments can be placed at the end of a line, and Python will ignore the rest of the line:</p>
+                <code>print("Hello, World!") #This is a comment</code>
+                <p>A comment does not have to be text that explains the code, it can also be used to prevent Python from executing code:</p>
+                <code>#print("Hello, World!")
+                    print("Cheers, Mate!")</code>
+            </article>
+            <article>
+                <h2>Multi Line Comments</h2>
+                <p>Python does not really have a syntax for multi line comments.</p>
+                <p>To add a multiline comment you could insert a <code class="inlinecode">#</code> for each line:</p>
+                <code>#This is a comment
+                    #written in
+                    #more than just one line
+                    print("Hello, World!")</code>
+                <p>Or, not quite as intended, you can use a multiline string.</p>
+                <p>Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it:</p>
+                <code>"""
+                    This is a comment
+                    written in
+                    more than just one line
+                    """
+                    print("Hello, World!")</code>
+                    <p>As long as the string is not assigned to a variable, Python will read the code, but then ignore it, and you have made a multiline comment.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+                <p>Variables are containers for storing data values.</p>
+            </article>
+            <article>
+                <h2>Creating Variables</h2>
+                <p>Python has no command for declaring a variable.</p>
+                <p>A variable is created the moment you first assign a value to it.</p>
+                <code>x = 5
+                    y = "John"
+                    print(x)
+                    print(y)</code>
+                <p>Variables do not need to be declared with any particular type, and can even change type after they have been set.</p>
+                <code>x = 4 &ensp; &ensp; &ensp; &ensp; # x is of type int
+                    x = "Sally" &ensp; # x is now of type str
+                    print(x)</code>
+            </article>
+            <article>
+                <h2>Casting</h2>
+                <p>If you want to specify the data type of a variable, this can be done with casting.</p>
+                <code>x = str(3) &ensp; &ensp; # x will be '3'
+                    y = int(3) &ensp; &ensp; # y will be 3
+                    z = float(3) &ensp; # z will be 3.0</code>
+            </article>
+            <article>
+                <h2>Get the Type</h2>
+                <p>You can get the data type of a variable with the <code class="inlinecode">type()</code> function.</p>
+                <code>x = 5
+                    y = "John"
+                    print(type(x))
+                    print(type(y))</code>
+            </article>
+            <article>
+                <h2>Single or Double Quotes?</h2>
+                <p>String variables can be declared either by using single or double quotes:</p>
+                <code>x = "John"
+                    # is the same as
+                    x = 'John'</code>
+            </article>
+            <article>
+                <h2>Case-Sensitive</h2>
+                <p>Variable names are case-sensitive.</p>
+                <p><i>This will create two variables:</i></p>
+                <code>a = 4
+                    A = "Sally"
+                    #A will not overwrite a</code>
+            </article>
+        </section>
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <article>
+                <h2>Built-in Data Types</h2>
+                <p>In programming, data type is an important concept.</p>
+                <p>Variables can store data of different types, and different types can do different things.</p>
+                <p>Python has the following data types built-in by default, in these categories:</p>
+                <ul>
+                    <li>Text Type: <code class="inlinecode">str</code></li>
+                    <li>Numeric Types: <code class="inlinecode">int</code>, <code class="inlinecode">float</code>, <code class="inlinecode">complex</code></li>
+                    <li>Sequence Types: <code class="inlinecode">list</code>, <code class="inlinecode">tuple</code>, <code class="inlinecode">range</code></li>
+                    <li>Mapping Type: <code class="inlinecode">dict</code></li>
+                    <li>Set Types: <code class="inlinecode">set</code>, <code class="inlinecode">frozenset</code></li>
+                    <li>Boolean Type: <code class="inlinecode">bool</code></li>
+                    <li>Binary Types: <code class="inlinecode">bytes</code>, <code class="inlinecode">bytearray</code>, <code class="inlinecode">memoryview</code></li>
+                    <li>None Type: <code class="inlinecode">NoneType</code></li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="If_Else">
+            <header>If Else</header>
+            <article>
+                <h2>Python Conditions and If statements</h2>
+                <p>Python supports the usual logical conditions from mathematics:</p>
+                <ul>
+                    <li>Equals: <code class="inlinecode">a == b</code></li>
+                    <li>Not Equals: <code class="inlinecode">a != b</code></li>
+                    <li>Less than: <code class="inlinecode">a < b</code></li>
+                    <li>Less than or equal to: <code class="inlinecode">a <= b</code></li>
+                    <li>Greater than: <code class="inlinecode">a > b</code></li>
+                    <li>Greater than or equal to: <code class="inlinecode">a >= b</code></li>
+                </ul>
+                <p>These conditions can be used in several ways, most commonly in "if statements" and loops.</p>
+                <p>An "if statement" is written by using the <code class="inlinecode">if</code> keyword.</p>
+                <code>a = 33
+                    b = 200
+                    if b > a:
+                    &ensp; print("b is greater than a")</code>
+                    <p>In this example we use two variables, <code class="inlinecode">a</code> and <code class="inlinecode">b</code>, which are used as part of the if statement to test whether <code class="inlinecode">b</code> is greater than <code class="inlinecode">a</code>. As <code class="inlinecode">a</code> is <code class="inlinecode">33</code>, and <code class="inlinecode">b</code> is <code class="inlinecode">200</code>, we know that 200 is greater than 33, and so we print to screen that "b is greater than a".</p>
+            </article>
+            <article>
+                <h2>Elif</h2>
+                <p>The <code class="inlinecode">elif</code> keyword is pythons way of saying "if the previous conditions were not true, then try this condition".</p>
+                <code>a = 33
+                    b = 33
+                    if b > a:
+                    &ensp; print("b is greater than a")
+                    elif a == b:
+                    &ensp; print("a and b are equal")</code>
+                    <p>In this example <code class="inlinecode">a</code> is equal to <code class="inlinecode">b</code>, so the first condition is not true, but the <code class="inlinecode">elif</code> condition is true, so we print to screen that "a and b are equal".</p>
+            </article>
+            <article>
+                <h2>Else</h2>
+                <p>The <code class="inlinecode">else</code> keyword catches anything which isn't caught by the preceding conditions.</p>
+                <code>a = 200
+                    b = 33
+                    if b > a:
+                    &ensp; print("b is greater than a")
+                    elif a == b:
+                    &ensp; print("a and b are equal")
+                    else:
+                    &ensp; print("a is greater than b")
+                    </code>
+                    <p>In this example <code class="inlinecode">a</code> is greater than <code class="inlinecode">b</code>, so the first condition is not true, also the <code class="inlinecode">elif</code> condition is not true, so we go to the <code class="inlinecode">else</code> condition and print to screen that "a is greater than b".</p>
+                    <p>You can also have an else without the elif:</p>
+                    <code>a = 200
+                        b = 33
+                        if b > a:
+                        &ensp; print("b is greater than a")
+                        else:
+                        &ensp; print("b is not greater than a")</code>
+            </article>
+            <article>
+                <h2>Short Hand If</h2>
+                <p>If you have only one statement to execute, you can put it on the same line as the if statement.</p>
+                <code>if a > b: print("a is greater than b")</code>
+            </article>
+            <article>
+                <h2>Short Hand If ... Else</h2>
+                <p>If you have only one statement to execute, one for if, and one for else, you can put it all on the same line:</p>
+                <code>a = 2
+                    b = 330
+                    print("A") if a > b else print("B")</code>
+                <p>This technique is known as <strong>Ternary Operators</strong>, or <strong>Conditional Expressions</strong>.</p>
+                <p>You can also have multiple else statements on the same line:</p>
+                <code>a = 330
+                    b = 330
+                    print("A") if a > b else print("=") if a == b else print("B")</code>
+            </article>
+            <article>
+                <h2>And</h2>
+                <p>The <code class="inlinecode">and</code> keyword is a logical operator, and is used to combine conditional statements:</p>
+                <code>a = 200
+                    b = 33
+                    c = 500
+                    if a > b and c > a:
+                    &ensp; print("Both conditions are True")</code>
+            </article>
+            <article>
+                <h2>Or</h2>
+                <p>The <code class="inlinecode">or</code> keyword is a logical operator, and is used to combine conditional statements:</p>
+                <code>a = 200
+                    b = 33
+                    c = 500
+                    if a > b or a > c:
+                    &ensp; print("At least one of the conditions is True")</code>
+            </article>
+            <article>
+                <h2>Nested If</h2>
+                <p>You can have <code class="inlinecode">if</code> statements inside <code class="inlinecode">if</code> statements, this is called <i>nested</i> <code class="inlinecode">if</code> statements.</p>
+                <code>x = 41
+
+                    if x > 10:
+                    &ensp; print("Above ten,")
+                    &ensp; if x > 20:
+                    &ensp; &ensp; print("and also above 20!")
+                    &ensp; else:
+                    &ensp; &ensp; print("but not above 20.")</code>
+            </article>
+            <article>
+                <h2>The pass Statement</h2>
+                <p><code class="inlinecode">if</code> statements cannot be empty, but if you for some reason have an <code class="inlinecode">if</code> statement with no content, put in the <code class="inlinecode">pass</code> statement to avoid getting an error.</p>
+                <code>a = 33
+                    b = 200
+                    
+                    if b > a:
+                    &ensp; pass</code>
+            </article>
+        </section>
+        <section class="main-section" id="While_Loops">
+            <header>While Loops</header>
+            <article>
+                <p>With the while loop we can execute a set of statements as long as a condition is true.</p>
+                <code>i = 1
+                    while i < 6:
+                    &ensp; print(i)
+                    &ensp; i += 1</code>
+                    <p>The <code class="inlinecode">while</code> loop requires relevant variables to be ready, in this example we need to define an indexing variable, <code class="inlinecode">i</code>, which we set to 1.</p>
+            </article>
+            <article>
+                <h2>The break Statement</h2>
+                <p>With the <code class="inlinecode">break</code> statement we can stop the loop even if the while condition is true:</p>
+                <code>i = 1
+                    while i < 6:
+                    &ensp; print(i)
+                    &ensp; if i == 3:
+                    &ensp; &ensp; break
+                    &ensp; i += 1</code>
+            </article>
+            <article>
+                <h2>The continue Statement</h2>
+                <p>With the <code class="inlinecode">continue</code> statement we can stop the current iteration, and continue with the next:</p>
+                <code>i = 0
+                    while i < 6:
+                    &ensp; i += 1
+                    &ensp; if i == 3:
+                    &ensp; &ensp; continue
+                    &ensp; print(i)</code>
+            </article>
+            <article>
+                <h2>The else Statement</h2>
+                <p>With the <code class="inlinecode">else</code> statement we can run a block of code once when the condition no longer is true:</p>
+                <code>i = 1
+                    while i < 6:
+                    &ensp; print(i)
+                    &ensp; i += 1
+                    else:
+                    &ensp; print("i is no longer less than 6")</code>
+            </article>
+        </section>
+        <section class="main-section" id="For_Loops">
+            <header>For Loops</header>
+            <article>
+                <p>A <code class="inlinecode">for</code> loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</p>
+                <p>This is less like the <code class="inlinecode">for</code> keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.</p>
+                <p>With the <code class="inlinecode">for</code> loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+                <code>fruits = ["apple", "banana", "cherry"]
+                    for x in fruits:
+                    &ensp; print(x)</code>
+                    <p>The <code class="inlinecode">for</code> loop does not require an indexing variable to set beforehand.</p>
+            </article>
+            <article>
+                <h2>Looping Through a String</h2>
+                <p>Even strings are iterable objects, they contain a sequence of characters:</p>
+                <code>for x in "banana":
+                    &ensp; print(x)</code>
+            </article>
+            <article>
+                <h2>The break Statement</h2>
+                <p>With the <code class="inlinecode">break</code> statement we can stop the loop before it has looped through all the items:</p>
+                <code>fruits = ["apple", "banana", "cherry"]
+                    for x in fruits:
+                    &ensp; print(x)
+                    &ensp; if x == "banana":
+                    &ensp; &ensp; break</code>
+            </article>
+            <article>
+                <h2>The continue Statement</h2>
+                <p>With the <code class="inlinecode">continue</code> statement we can stop the current iteration of the loop, and continue with the next:</p>
+                <code>fruits = ["apple", "banana", "cherry"]
+                    for x in fruits:
+                    &ensp; if x == "banana":
+                    &ensp; &ensp; continue
+                    &ensp; print(x)</code>
+            </article>
+            <article>
+                <h2>The range() Function</h2>
+                <p>To loop through a set of code a specified number of times, we can use the <code class="inlinecode">range()</code> function,</p>
+                <p>The <code class="inlinecode">range()</code> function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.</p>
+                <code>for x in range(6):
+                    &ensp; print(x)</code>
+                <p>The <code class="inlinecode">range()</code> function defaults to 0 as a starting value, however it is possible to specify the starting value by adding a parameter: <code class="inlinecode">range(2, 6)</code>, which means values from 2 to 6 (but not including 6):</p>
+                <code>for x in range(2, 6):
+                    &ensp; print(x)</code>
+                <p>The <code class="inlinecode">range()</code> function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: <code class="inlinecode">range(2, 30, 3)</code>:</p>
+                <code>for x in range(2, 30, 3):
+                    &ensp; print(x)</code>
+            </article>
+            <article>
+                <h2>Else in For Loop</h2>
+                <p>The <code class="inlinecode">else</code> keyword in a <code class="inlinecode">for</code> loop specifies a block of code to be executed when the loop is finished:</p>
+                <code>for x in range(6):
+                    &ensp; print(x)
+                    else:
+                    &ensp; print("Finally finished!")</code>
+            </article>
+            <article>
+                <h2>Nested Loops</h2>
+                <p>A nested loop is a loop inside a loop.</p>
+                <p>The "inner loop" will be executed one time for each iteration of the "outer loop":</p>
+                <code>adj = ["red", "big", "tasty"]
+                    fruits = ["apple", "banana", "cherry"]
+                    
+                    for x in adj:
+                    &ensp; for y in fruits:
+                    &ensp; &ensp; print(x, y)</code>
+            </article>
+            <article>
+                <h2>The pass Statement</h2>
+                <p><code class="inlinecode">for</code> loops cannot be empty, but if you for some reason have a <code class="inlinecode">for</code> loop with no content, put in the <code class="inlinecode">pass</code> statement to avoid getting an error.</p>
+                <code>for x in [0, 1, 2]:
+                    &ensp; pass</code>
+            </article>
+        </section>
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <article>
+                <p>A function is a block of code which only runs when it is called.</p>
+                <p>You can pass data, known as parameters, into a function.</p>
+                <p>A function can return data as a result.</p>
+            </article>
+            <article>
+                <h2>Creating a Function</h2>
+                <p>In Python a function is defined using the <code class="inlinecode">def</code> keyword:</p>
+                <code>def my_function():
+                    &ensp; print("Hello from a function")</code>
+            </article>
+            <article>
+                <h2>Calling a Function</h2>
+                <p>To call a function, use the function name followed by parenthesis:</p>
+                <code>def my_function():
+                    &ensp; print("Hello from a function")
+                  
+                    my_function()</code>
+            </article>
+            <article>
+                <h2>Arguments</h2>
+                <p>Information can be passed into functions as arguments.</p>
+                <p>Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.</p>
+                <p>The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:</p>
+                <code>def my_function(fname):
+                    &ensp; print(fname + " Refsnes")
+                  
+                    my_function("Emil")
+                    my_function("Tobias")
+                    my_function("Linus")</code>
+            </article>
+            <article>
+                <h2>Parameters or Arguments?</h2>
+                <p>The terms <i>parameter</i> and <i>argument</i> can be used for the same thing: information that are passed into a function.</p>
+                <p>From a function's perspective:</p>
+                <ul>
+                    <li>A parameter is the variable listed inside the parentheses in the function definition.</li>
+                    <li>An argument is the value that is sent to the function when it is called.</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Number of Arguments</h2>
+                <p>By default, a function must be called with the correct number of arguments. Meaning that if your function expects 2 arguments, you have to call the function with 2 arguments, not more, and not less.</p>
+                <code>def my_function(fname, lname):
+                    &ensp; print(fname + " " + lname)
+                  
+                    my_function("Emil", "Refsnes")</code>
+            </article>
+            <article>
+                <h2>Arbitrary Arguments, *args</h2>
+                <p>If you do not know how many arguments that will be passed into your function, add a <code class="inlinecode">*</code> before the parameter name in the function definition.</p>
+                <p>This way the function will receive a <i>tuple</i> of arguments, and can access the items accordingly:</p>
+                <code>def my_function(*kids):
+                    &ensp; print("The youngest child is " + kids[2])
+                  
+                    my_function("Emil", "Tobias", "Linus")</code>
+                    <ul>
+                        <li><i>Arbitrary Arguments</i> are often shortened to <i>*args</i> in Python documentations.</li>
+                    </ul>
+            </article>
+            <article>
+                <h2>Keyword Arguments</h2>
+                <p>You can also send arguments with the <i>key = value</i> syntax.</p>
+                <p>This way the order of the arguments does not matter.</p>
+                <code>def my_function(child3, child2, child1):
+                    &ensp; print("The youngest child is " + child3)
+                  
+                    my_function(child1 = "Emil", child2 = "Tobias", child3 = "Linus")</code>
+                    <ul>
+                        <li>The phrase <i>Keyword Arguments</i> are often shortened to <i>kwargs</i> in Python documentations.</li>
+                    </ul>
+            </article>
+            <article>
+                <h2>Arbitrary Keyword Arguments, **kwargs</h2>
+                <p>If you do not know how many keyword arguments that will be passed into your function, add two asterisk: <code class="inlinecode">**</code> before the parameter name in the function definition.</p>
+                <p>This way the function will receive a <i>dictionary</i> of arguments, and can access the items accordingly:</p>
+                <code>def my_function(**kid):
+                    &ensp; print("His last name is " + kid["lname"])
+                  
+                    my_function(fname = "Tobias", lname = "Refsnes")</code>
+                    <ul>
+                        <li><i>Arbitrary Kword Arguments</i> are often shortened to <i>**kwargs</i> in Python documentations.</li>
+                    </ul>
+            </article>
+            <article>
+                <h2>Default Parameter Value</h2>
+                <p>The following example shows how to use a default parameter value.</p>
+                <p>If we call the function without argument, it uses the default value:</p>
+                <code>def my_function(country = "Norway"):
+                    &ensp; print("I am from " + country)
+                  
+                    my_function("Sweden")
+                    my_function("India")
+                    my_function()
+                    my_function("Brazil")</code>
+            </article>
+            <article>
+                <h2>Passing a List as an Argument</h2>
+                <p>You can send any data types of argument to a function (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function.</p>
+                <p>E.g. if you send a List as an argument, it will still be a List when it reaches the function:</p>
+                <code>def my_function(food):
+                    &ensp; for x in food:
+                    &ensp; &ensp; print(x)
+                  
+                    fruits = ["apple", "banana", "cherry"]
+                    
+                    my_function(fruits)</code>
+            </article>
+            <article>
+                <h2>Return Values</h2>
+                <p>To let a function return a value, use the <code class="inlinecode">return</code> statement:</p>
+                <code>def my_function(x):
+                    &ensp; return 5 * x
+                  
+                    print(my_function(3))
+                    print(my_function(5))
+                    print(my_function(9))</code>
+            </article>
+            <article>
+                <h2>The pass Statement</h2>
+                <p><code class="inlinecode">function</code> definitions cannot be empty, but if you for some reason have a <code class="inlinecode">function</code> definition with no content, put in the <code class="inlinecode">pass</code> statement to avoid getting an error.</p>
+                <code>def myfunction():
+                    &ensp; pass</code>
+            </article>
+            <article>
+                <h2>Recursion</h2>
+                <p>Python also accepts function recursion, which means a defined function can call itself.</p>
+                <p>Recursion is a common mathematical and programming concept. It means that a function calls itself. This has the benefit of meaning that you can loop through data to reach a result.</p>
+                <p>The developer should be very careful with recursion as it can be quite easy to slip into writing a function which never terminates, or one that uses excess amounts of memory or processor power. However, when written correctly recursion can be a very efficient and mathematically-elegant approach to programming.</p>
+                <p>In this example, <code class="inlinecode">tri_recursion()</code> is a function that we have defined to call itself ("recurse"). We use the <code class="inlinecode">k</code> variable as the data, which decrements (<code class="inlinecode">-1</code>) every time we recurse. The recursion ends when the condition is not greater than 0 (i.e. when it is 0).</p>
+                <p>To a new developer it can take some time to work out how exactly this works, best way to find out is by testing and modifying it.</p>
+                <code>def tri_recursion(k):
+                    &ensp; if(k > 0):
+                    &ensp; &ensp; result = k + tri_recursion(k - 1)
+                    &ensp; &ensp; print(result)
+                    &ensp; else:
+                    &ensp; &ensp; result = 0
+                    &ensp; return result
+                  
+                    print("\n\nRecursion Example Results")
+                    tri_recursion(6)</code>
+            </article>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <p>All the documentation in this page is taken from <a href="https://www.w3schools.com/python/" target="_blank" title="w3schools">w3schools</a></p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
