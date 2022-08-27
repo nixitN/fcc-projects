@@ -19,7 +19,7 @@ li {
 }
 
 a {
-    color: #000f26;
+    color: #14dfaf;
     text-decoration: none;
 }
 
@@ -32,8 +32,8 @@ a {
 .button {
     padding: 0 20px;
     height: 40px;
-    font-size: 1em;
-    font-weight: 800;
+    font-size: 15px;
+    font-weight: bold;
     text-transform: lowercase;
     border: 3px #000f26 solid;
     border-radius: 5px;
@@ -48,7 +48,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: #3a5152;
 }
 
 @media (max-width: 600px) {
@@ -58,7 +58,7 @@ header {
 }
 
 .logo {
-    width: 60vw;
+    width: 65vw;
 }
 
 @media (max-width: 650px) {
@@ -145,11 +145,13 @@ nav > ul {
     height: 30px;
     margin: 15px 0;
     border: 0;
-    background-color: #f1c40f;
+    color: #16dcae;
+    background-color: #040607;
 }
   
 #mail-box input[type='submit']:hover {
-    background-color: orange;
+    color: #16dcae;
+    background-color: #040607;
     transition: background-color 1s;
 }
   
@@ -163,12 +165,7 @@ nav > ul {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-}
-  
-@media (max-width: 550px) {
-    #features .icon {
-      display: none;
-    }
+    text-align: center;
 }
   
 @media (max-width: 650px) {
@@ -202,13 +199,15 @@ nav > ul {
     text-align: center;
     width: calc(100% / 3);
     margin: 10px;
-    border: 1px solid #000;
-    border-radius: 3px;
+    border: 1px solid #040607;
+    border-radius: 10px;
 }
 
 .set > .armor {
-    background-color: #ddd;
-    color: black;
+    background-color: #078268;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #2affd6;
     padding: 15px 0;
     width: 100%;
     text-transform: uppercase;
@@ -230,12 +229,13 @@ nav > ul {
 .set > button {
     border: 0;
     margin: 15px 0;
-    background-color: #f1c40f;
-    font-weight: 400;
+    color: #16dcae;
+    background-color: #040607;
+    font-weight: bold;
 }
   
 .set > button:hover {
-    background-color: orange;
+    background-color: #040607;
     transition: background-color 1s;
 }
   
@@ -253,7 +253,7 @@ nav > ul {
   
 footer {
     margin-top: 30px;
-    background-color: #ddd;
+    background-color: #3a5152;
     padding: 20px;
 }
   
@@ -271,5 +271,5 @@ footer > span {
     display: flex;
     justify-content: flex-end;
     font-size: 0.9em;
-    color: #444;
+    color: #fff;
 }
