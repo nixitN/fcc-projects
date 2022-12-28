@@ -6,3 +6,4 @@ All my FCC projects so far submitted.
 - Survey Form: HTML + CSS
 - Technical Documentation Page: HTML + CSS + texts from the W3Schools
 - Product Landing: HTML + CSS + source material from Ubisoft in-game Store
+- Personal Portfolio: HTML + CSS + my personal works
