@@ -1,0 +1,198 @@
+:root {
+    --dark-olive: #429f95;
+    --light-olive: #73b7b6;
+    --medium-grey: #797c83;
+    --light-grey: #c1c2c7;
+    --dark-grey: #44494d;
+    --white-grey: #faf6f3;
+}
+
+* {margin: 0; padding: 0;}  
+*, *::before, *::after {box-sizing: inherit;}
+
+html {box-sizing: border-box; scroll-behavior: smooth;}
+body {font-family: 'Antic Slab', serif; font-size: 1rem; color: var(--dark-grey);} 
+
+ul {list-style: none;}
+.icons {width: 2rem;}
+
+a {text-decoration: none; color: var(--dark-olive);}
+a:hover {text-decoration: none; color: var(--light-olive);}
+
+
+
+/* Headers */
+h1 {
+    max-width: 640px;
+    color: var(--dark-olive);
+    font-size: 3rem;
+    font-weight: normal;
+    font-family: 'Nerko One', cursive;  
+}
+
+h2 {
+    max-width: 640px;
+    margin: 0 auto 1rem auto;
+    color: var(--light-olive);
+    font-family: 'Indie Flower', cursive;
+    text-shadow: 1px 1px 2px var(--dark-grey);
+}
+
+@media (max-width: 28.75em) {h2 {font-size: 4rem;}}
+
+
+
+/* Navigation Section */
+.navigation {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--medium-grey);
+    box-shadow: 1px 1px 2px var(--dark-grey);
+    z-index: 10;
+    font-family: 'Yeseva One', cursive;
+    text-shadow: 1px 1px 2px var(--dark-grey);
+}
+
+.navigation-list {display: flex;}
+.navigation-list a {display: block; font-size: 1.2rem; font-weight: bold; padding: 1.5rem; transition: ease-in-out 1.5s;}
+.navigation-list a:hover {background: var(--light-grey); transition: ease-in-out 1.5s;}
+
+@media (max-width: 28.75em) {
+    .navigation {justify-content: center;} 
+    .navigation-list {margin: 0 1rem;}
+} 
+
+
+
+/* Welcome Section */
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light-grey);
+    background-image: radial-gradient(var(--white-grey) 0%, var(--medium-grey) 100%);
+}
+  
+.welcome > p {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.welcome > p.secret {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+
+
+/* About Section */
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: var(--light-grey);
+}
+
+
+
+/* Projects section */
+.projects {
+    text-align: center;
+    padding: 10rem 2rem;
+    background: var(--white-grey);
+    background-image: linear-gradient(var(--white-grey) 0%, var(--medium-grey) 100%);
+}  
+
+.project-tile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+  
+@media (max-width: 30.625em) {
+    .projects {padding: 6rem 1rem;}
+    .project-tile {grid-template-columns: 1fr;}
+}
+  
+.project {
+    background: var(--light-grey);
+    box-shadow: 1px 1px 2px var(--dark-grey);
+    border-radius: 10px;
+}
+
+.project > img {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+  
+.emblem {
+    color: var(--light-grey);
+    transition: color 1s ease-out;
+}
+  
+.project:hover .emblem {
+    color: var(--light-olive);
+}
+  
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+  
+.project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+
+/* Contact Section */
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: var(--light-grey);
+}
+
+
+
+/* Footer Section */
+footer {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: var(--medium-grey);
+    border-top: 1px solid var(--dark-grey);
+}
+  
+footer > p {margin: 2rem;}
+  
+@media (max-width: 28.75em) {
+    footer {flex-direction: column; text-align: center;}
+}
