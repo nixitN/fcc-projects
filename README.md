@@ -10,7 +10,7 @@ All my [FCC](https://www.freecodecamp.org) projects so far submitted.
 - **Personal Portfolio:** HTML5 + CSS + my personal works.
 
 ### JavaScript Algorithms and Data Structures:
-(*in the **js-projects** folder*)
+(*in the **javascript** folder*)
 - Palindrome Checker
 - Roman Numeral Converter
 - Caesars Cipher
