@@ -1,7 +1,6 @@
 import re
 
 def arithmetic_arranger(problems, solve = False):
-
     if(len(problems) > 5):
         return "Error: Too many problems."
     
@@ -22,7 +21,7 @@ def arithmetic_arranger(problems, solve = False):
         secondNumber = problem.split(" ")[2]
 
         if(len(firstNumber) >= 5 or len(secondNumber) >= 5):
-            return "Error: Number cannot be more than four digits."
+            return "Error: Numbers cannot be more than four digits."
         
         sum = ""
         if(operator == "+"):
@@ -35,7 +34,7 @@ def arithmetic_arranger(problems, solve = False):
         bottom = operator + str(secondNumber).rjust(length - 1)
         line = ""
         res = str(sum).rjust(length)
-        for s in range (length):
+        for s in range(length):
             line += "-"
 
         if problem != problems[-1]:

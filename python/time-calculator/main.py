@@ -1,10 +1,9 @@
 # This entrypoint file to be used in development. Start by reading README.md
-from arithmetic_arranger import arithmetic_arranger
+from time_calculator import add_time
 from unittest import main
 
 
-print(arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]))
-
+print(add_time("11:06 PM", "2:02"))
 
 # Run unit tests automatically
 main(module='test_module', exit=False)
