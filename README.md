@@ -20,3 +20,4 @@ All my [FCC](https://www.freecodecamp.org) projects so far submitted.
 ### Scientific Computing with Python:
 (*in the **python** folder*)
 - Arithmetic Formatter
+- Time Calculator
