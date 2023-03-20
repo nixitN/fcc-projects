@@ -21,3 +21,6 @@ All my [FCC](https://www.freecodecamp.org) projects so far submitted.
 (*in the **python** folder*)
 - Arithmetic Formatter
 - Time Calculator
+- Budget App
+- Polygon Area Calculator
+- Probability Calculator
